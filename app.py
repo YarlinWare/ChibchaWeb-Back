@@ -1,4 +1,4 @@
-from app import createApp, db
+from __init__ import createApp, db
 
 app = createApp('development')
 
