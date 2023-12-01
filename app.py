@@ -1,7 +1,6 @@
 from app import createApp, db, Routes
 
-app1 = createApp('developer')
-application = app1  # Agrega esta línea
+app1 = createApp('development')
 
 app1.register_blueprint(Routes.UsersRoutes.userMain)
 app1.register_blueprint(Routes.authRoutes.authMain)
@@ -20,7 +19,7 @@ app1.register_blueprint(Routes.RolRoutes.rolsMain)
 app1.register_blueprint(Routes.CreditCardRoute.creditCardsMain)
 
 if __name__ == '__main__':
-    with application.app_context():
+    with app1.app_context():
         db.create_all() 
 
-    application.run()
+    app1.run()
