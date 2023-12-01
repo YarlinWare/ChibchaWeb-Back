@@ -1,6 +1,6 @@
 from app import createApp, db, Routes
 
-app1 = createApp('application')
+app1 = createApp('developer')
 application = app1  # Agrega esta línea
 
 app1.register_blueprint(Routes.UsersRoutes.userMain)
