@@ -1,1 +1,1 @@
-web: gunicorn chibchaweb:app
+web: gunicorn app:app
