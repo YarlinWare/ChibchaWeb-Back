@@ -20,7 +20,7 @@ app1.register_blueprint(Routes.RolRoutes.rolsMain)
 app1.register_blueprint(Routes.CreditCardRoute.creditCardsMain)
 
 if __name__ == '__main__':
-    with app1.app_context():
+    with application.app_context():
         db.create_all() 
 
-    app1.run()
+    application.run()
