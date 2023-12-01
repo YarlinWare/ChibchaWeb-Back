@@ -1,6 +1,7 @@
 from app import createApp, db, Routes
 
 app1 = createApp('development')
+application = app1  # Agrega esta línea
 
 app1.register_blueprint(Routes.UsersRoutes.userMain)
 app1.register_blueprint(Routes.authRoutes.authMain)
